@@ -1,99 +1,99 @@
-/* Fondo oscuro profundo idéntico al diseño de referencia */
+/* Color de fondo global (Azul/Negro Noche Profundo) */
 [data-md-color-scheme="slate"] {
-  --md-default-bg-color: #05070f;
-  --md-default-bg-color--page: #080c18;
-  --md-primary-fg-color: #0b0f19;
+  --md-default-bg-color: #030712;
+  --md-default-bg-color--page: #030712;
+  --md-primary-fg-color: #030712;
   --md-accent-fg-color: #00f0ff;
 }
 
-/* Banner Hero principal */
+/* Encabezado superior unificado en negro/azul oscuro */
+.md-header {
+  background-color: #030712 !important;
+  border-bottom: 1px solid #1e293b;
+}
+
+.md-tabs {
+  background-color: #030712 !important;
+  border-bottom: 1px solid #0f172a;
+}
+
+/* Contenedor Hero principal */
 .hero-card {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  background: radial-gradient(circle at top left, #1a103c 0%, #080c18 80%);
-  border: 1px solid #2d1f66;
+  background: radial-gradient(circle at top left, #0d1527 0%, #030712 100%);
+  border: 1px solid #1e293b;
   border-radius: 20px;
   padding: 2.5rem;
   margin-top: 1rem;
-  box-shadow: 0 0 30px rgba(112, 0, 255, 0.15);
+  box-shadow: 0 0 35px rgba(0, 240, 255, 0.08);
 }
 
 .hero-content {
-  flex: 1 1 320px;
+  flex: 1 1 340px;
 }
 
+/* Subtítulo Cyan Neón arriba del título */
 .hero-tag {
-  font-size: 0.85rem;
+  font-size: 1.25rem;
   font-weight: 700;
-  letter-spacing: 2px;
-  color: #00f0ff;
-  text-transform: uppercase;
+  color: #38bdf8;
   margin-bottom: 0.5rem;
 }
 
+/* Título Gigante en Blanco Puro */
 .hero-title-main {
-  font-size: 2.5rem !important;
+  font-size: 2.6rem !important;
   font-weight: 900 !important;
-  line-height: 1.1 !important;
-  background: linear-gradient(90deg, #ffffff 30%, #a855f7 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  margin-bottom: 1rem !important;
+  line-height: 1.15 !important;
+  color: #ffffff !important;
+  margin-bottom: 1.2rem !important;
 }
 
+/* Texto descriptivo gris suave */
 .hero-description {
   color: #94a3b8;
-  font-size: 1rem;
-  margin-bottom: 1.5rem;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
 }
 
-/* Imagen lateral con marco Neón de Sistemas Operativos */
-.hero-media {
-  flex: 0 1 300px;
-  text-align: center;
-}
-
-.hero-media img {
-  border-radius: 16px;
-  border: 2px solid #a855f7;
-  box-shadow: 0 0 25px rgba(168, 85, 247, 0.4);
-}
-
-/* Selector desplegable de laboratorios */
+/* Botón estilo píldora azu/morado */
 details.lab-dropdown {
-  background: #0f172a;
-  border: 1px solid #334155;
-  border-radius: 12px;
-  padding: 0.8rem 1.2rem;
-  margin-top: 1.5rem;
+  background: linear-gradient(90deg, #1e293b 0%, #0f172a 100%);
+  border: 1px solid #38bdf8;
+  border-radius: 50px;
+  padding: 0.7rem 1.5rem;
+  display: inline-block;
+  box-shadow: 0 0 15px rgba(56, 189, 248, 0.2);
 }
 
 details.lab-dropdown summary {
-  font-weight: bold;
-  color: #00f0ff;
+  font-weight: 700;
+  color: #ffffff;
   cursor: pointer;
 }
 
 .lab-list {
   list-style: none;
   padding-left: 0;
-  margin-top: 0.8rem;
+  margin-top: 1rem;
 }
 
 .lab-list li {
-  padding: 0.5rem 0;
+  padding: 0.6rem 0;
   border-bottom: 1px solid #1e293b;
 }
 
 .lab-list a {
-  color: #e2e8f0;
+  color: #38bdf8;
   text-decoration: none;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .lab-disabled {
-  color: #64748b !important;
+  color: #64748b;
   font-style: italic;
 }
