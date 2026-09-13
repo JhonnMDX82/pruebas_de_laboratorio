@@ -20,30 +20,35 @@ html, body {
   overflow-x: hidden;
 }
 
-/* Título del header en celular: una sola línea con efecto marquee,
-   y se respeta el estado nativo de Material cuando el buscador está activo */
+/* Título del header en celular: cinta deslizante en loop perfecto,
+   sin afectar el estado nativo de Material cuando el buscador está activo */
 @media screen and (max-width: 76.1875em) {
   .md-header__title:not(.md-header__title--active) {
-    height: auto;
+    position: relative;
+    height: 2.4rem;
     overflow: hidden;
-    display: flex;
-    align-items: center;
   }
 
   .md-header__title:not(.md-header__title--active) .md-ellipsis {
-    display: inline-block;
-    white-space: nowrap !important;
-    overflow: visible;
-    text-overflow: unset !important;
+    display: none;
+  }
+
+  .md-header__title:not(.md-header__title--active)::before {
+    content: "LABORATORIOS DE SISTEMAS OPERATIVOS     ★     LABORATORIOS DE SISTEMAS OPERATIVOS     ★     ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    white-space: nowrap;
     font-size: 0.95rem;
-    animation: titleMarquee 9s ease-in-out infinite;
-    animation-delay: 1.5s;
+    font-weight: 700;
+    line-height: 2.4rem;
+    color: inherit;
+    animation: titleMarquee 14s linear infinite;
   }
 
   @keyframes titleMarquee {
-    0%, 20%   { transform: translateX(0); }
-    50%, 70%  { transform: translateX(calc(-100% + 92vw)); }
-    100%      { transform: translateX(0); }
+    from { transform: translateX(0); }
+    to   { transform: translateX(-50%); }
   }
 }
 
