@@ -4,9 +4,33 @@
 /* ===== LIMPIEZA DE LAYOUT ===== */
 .md-path,
 .md-header__topic:last-child,
-.md-sidebar--primary,
 .md-sidebar--secondary {
   display: none !important;
+}
+
+/* Ocultar la barra lateral de navegación SOLO en pantallas grandes
+   (en celular esa barra es el contenido del menú hamburguesa) */
+@media screen and (min-width: 76.25em) {
+  .md-sidebar--primary {
+    display: none !important;
+  }
+}
+
+/* Título del header: permitir texto completo en celular en vez de cortarlo */
+@media screen and (max-width: 76.1875em) {
+  .md-header__title {
+    height: auto !important;
+    display: flex;
+    align-items: center;
+  }
+
+  .md-header__title .md-ellipsis {
+    white-space: normal !important;
+    overflow: visible !important;
+    text-overflow: unset !important;
+    font-size: 0.95rem;
+    line-height: 1.25;
+  }
 }
 
 html, body {
