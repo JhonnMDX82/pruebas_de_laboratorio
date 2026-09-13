@@ -1,1 +1,27 @@
-site_name: My Docs
+site_name: LABORATORIOS DE SISTEMAS OPERATIVOS
+site_url: https://JhonnMDX82.github.io/pruebas_de_laboratorio/
+site_description: Portal de laboratorios de Sistemas Operativos Carrera de Ingenieria de Sistemas.
+
+theme:
+  name: material
+  language: es
+  palette:
+    scheme: slate
+    primary: black
+    accent: cyan
+  features:
+    - navigation.tabs
+    - navigation.instant
+    - content.code.copy
+
+markdown_extensions:
+  - attr_list
+  - md_in_html
+
+extra_css:
+  - stylesheets/extra.css
+
+nav:
+  - Inicio: index.md
+  
+  - Acerca de: acerca_de.md

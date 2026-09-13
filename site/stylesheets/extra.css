@@ -1,0 +1,135 @@
+/* ==========================================
+   1. ELIMINAR TEXTO "INICIO" Y EXPANDIR ANCHO
+   ========================================== */
+.md-content h1:first-child,
+article > h1:first-child,
+.md-path,
+.md-header__topic:last-child {
+  display: none !important;
+}
+
+.md-grid {
+  max-width: 95% !important;
+  margin: 0 auto !important;
+  padding: 0 1rem !important;
+}
+
+.md-main__inner {
+  margin-top: 1rem !important;
+}
+
+.md-content {
+  max-width: 100% !important;
+  padding: 0 !important;
+}
+
+.md-content__inner {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* ==========================================
+   2. DISTRIBUCIÓN HORIZONTAL (ESTILO SEGUNDA IMAGEN)
+   ========================================== */
+.hero-container {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  gap: 3rem;
+  width: 100% !important;
+  padding: 2rem 1rem;
+  box-sizing: border-box !important;
+}
+
+/* Lado Izquierdo: Textos */
+.hero-text-side {
+  flex: 1 1 50% !important;
+  max-width: 50% !important;
+}
+
+.hero-tag {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #38bdf8;
+  margin-bottom: 0.8rem;
+}
+
+.hero-title {
+  font-size: 3.5rem !important;
+  font-weight: 800 !important;
+  line-height: 1.08 !important;
+  color: #ffffff !important;
+  margin-bottom: 1.5rem !important;
+  letter-spacing: -0.02em;
+}
+
+.hero-description {
+  color: #cbd5e1;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  margin-bottom: 2.5rem;
+  max-width: 90%;
+}
+
+/* Botón Desplegable con borde redondeado azul */
+details.lab-dropdown {
+  background: #0f172a;
+  border: 1px solid #38bdf8;
+  border-radius: 50px;
+  padding: 0.8rem 2rem;
+  display: inline-block;
+  box-shadow: 0 0 15px rgba(56, 189, 248, 0.25);
+}
+
+details.lab-dropdown summary {
+  font-weight: 700;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 1.05rem;
+}
+
+.lab-list {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 1rem;
+}
+
+.lab-list li {
+  padding: 0.6rem 0;
+  border-bottom: 1px solid #1e293b;
+}
+
+.lab-list a {
+  color: #38bdf8;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.lab-disabled {
+  color: #64748b;
+  font-style: italic;
+}
+
+/* ==========================================
+   3. LADO DERECHO: TARJETA MORADA CON IMAGEN GRANDE
+   ========================================== */
+.hero-image-card {
+  flex: 1 1 48% !important;
+  max-width: 48% !important;
+  background: #030712;
+  border: 2px solid #3b82f6;
+  border-radius: 28px;
+  padding: 1.2rem;
+  box-shadow: 0 0 35px rgba(59, 130, 246, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-image-card img {
+  width: 100% !important;
+  height: auto !important;
+  border-radius: 20px;
+  display: block;
+}

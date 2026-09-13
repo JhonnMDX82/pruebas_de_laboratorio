@@ -1,0 +1,387 @@
+/* extra.css */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600;800&display=swap');
+
+/* ===== LIMPIEZA DE LAYOUT ===== */
+.md-path,
+.md-header__topic:last-child,
+.md-sidebar--primary,
+.md-sidebar--secondary {
+  display: none !important;
+}
+
+html, body {
+  overflow-x: hidden;
+}
+
+.md-grid {
+  max-width: 95% !important;
+  margin: 0 auto !important;
+}
+
+.md-content {
+  max-width: 100% !important;
+  padding: 0 !important;
+}
+
+.md-content__inner {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* ===== HERO: fondo aurora animado ===== */
+.hero-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  padding: 3rem 4rem;
+  box-sizing: border-box;
+  background: linear-gradient(120deg, #050a18 0%, #3b1063 35%, #0d3a72 65%, #1c5fc9 100%);
+  background-size: 180% 180%;
+  animation: auroraShift 12s ease-in-out infinite;
+}
+
+@keyframes auroraShift {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+
+.hero-text-side {
+  flex: 1 1 50%;
+  max-width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* Título con brillo degradado animado cyan-violeta */
+.hero-tag {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 2.1rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  margin-bottom: 1rem;
+  background: linear-gradient(90deg, #5eead4, #a78bfa, #5eead4);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: tagShimmer 4s linear infinite;
+}
+
+@keyframes tagShimmer {
+  to { background-position: 200% center; }
+}
+
+.hero-title {
+  font-size: 3rem;
+  font-weight: 800;
+  line-height: 1.15;
+  color: #ffffff;
+  margin: 0 0 1.5rem 0;
+  letter-spacing: -0.02em;
+}
+
+.hero-description {
+  color: #cbd5e1;
+  font-size: 1.15rem;
+  line-height: 1.5;
+  margin-bottom: 2rem;
+  max-width: 90%;
+}
+
+/* ===== DROPDOWN DE LABORATORIOS ===== */
+.lab-dropdown {
+  width: fit-content;
+}
+
+.lab-dropdown summary {
+  list-style: none;
+  cursor: pointer;
+  background: #2563eb;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 1rem;
+  padding: 0.9rem 1.8rem;
+  border-radius: 50px;
+  box-shadow: 0 0 15px rgba(37, 99, 235, 0.6), 0 0 30px rgba(167, 139, 250, 0.3);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: box-shadow 0.2s ease;
+}
+
+/* Apaga el icono nativo que agrega Material para evitar la doble flecha */
+.lab-dropdown summary::-webkit-details-marker,
+.lab-dropdown summary::marker,
+.lab-dropdown summary::after {
+  display: none !important;
+  content: none !important;
+}
+
+.lab-dropdown summary:hover {
+  box-shadow: 0 0 20px rgba(37, 99, 235, 0.9), 0 0 40px rgba(167, 139, 250, 0.5);
+}
+
+.lab-dropdown[open] summary .chevron {
+  transform: rotate(180deg);
+}
+
+.chevron {
+  display: inline-block;
+  transition: transform 0.2s ease;
+}
+
+.lab-list {
+  list-style: none;
+  margin: 0.8rem 0 0 0;
+  padding: 0.5rem 0;
+  background: #0a1120;
+  border: 1px solid #1e3a5f;
+  border-radius: 14px;
+  min-width: 320px;
+  box-shadow: 0 0 20px rgba(167, 139, 250, 0.15);
+}
+
+.lab-list li {
+  padding: 0.7rem 1.3rem;
+  border-bottom: 1px solid #16233a;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.lab-list li:last-child {
+  border-bottom: none;
+}
+
+.lab-list li.ready a {
+  color: #5eead4;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.lab-list li.ready:hover {
+  background: rgba(167, 139, 250, 0.08);
+}
+
+.lab-list li.locked {
+  color: #64748b;
+}
+
+.soon {
+  font-size: 0.75rem;
+  font-style: italic;
+  color: #475569;
+}
+
+/* ===== TARJETA DE IMAGEN: flotante + resplandor cyan/violeta ===== */
+.hero-image-card {
+  flex: 1 1 45%;
+  max-width: 45%;
+  border-radius: 20px;
+  animation: neonPulse 3s ease-in-out infinite, floatCard 6s ease-in-out infinite;
+}
+
+.hero-image-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 20px 20px 0 0;
+  display: block;
+}
+
+@keyframes neonPulse {
+  0%, 100% {
+    box-shadow: 0 0 15px rgba(56, 189, 248, 0.5), 0 0 30px rgba(167, 139, 250, 0.25);
+  }
+  50% {
+    box-shadow: 0 0 25px rgba(167, 139, 250, 0.8), 0 0 50px rgba(56, 189, 248, 0.45);
+  }
+}
+
+@keyframes floatCard {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+/* ===== TERMINAL ===== */
+.hero-terminal {
+  background: #0a0f1a;
+  font-family: "Courier New", monospace;
+  font-size: 1.1rem;
+  padding: 0.8rem 1.2rem;
+  border-radius: 0 0 16px 16px;
+}
+
+.hero-terminal .prompt {
+  color: #22c55e;
+  margin-right: 0.4rem;
+}
+
+.hero-terminal .line {
+  color: #e5e7eb;
+}
+
+.hero-terminal .cursor {
+  display: inline-block;
+  width: 9px;
+  height: 1.1rem;
+  background: #e5e7eb;
+  vertical-align: middle;
+  margin-left: 4px;
+  animation: blink 1s step-start infinite;
+}
+
+@keyframes blink {
+  50% { opacity: 0; }
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 900px) {
+  .hero-container {
+    flex-direction: column;
+    padding: 2rem 1.5rem;
+  }
+  .hero-text-side,
+  .hero-image-card {
+    max-width: 100%;
+    flex: 1 1 100%;
+  }
+  .hero-title {
+    font-size: 2rem;
+  }
+  .hero-tag {
+    font-size: 1.6rem;
+  }
+}
+
+/* ===== ESTILOS PARA LA PÁGINA ACERCA DE ===== */
+
+/* Cajas de información (Azul / Verde) */
+.info-box-blue {
+  background: #091224;
+  border: 1px solid #3b82f6;
+  border-radius: 12px;
+  padding: 1.2rem;
+  margin: 1.5rem 0;
+  box-shadow:
+    0 0 8px rgba(59, 130, 246, 0.8),
+    0 0 20px rgba(59, 130, 246, 0.5),
+    0 0 40px rgba(59, 130, 246, 0.3);
+}
+
+.info-box-blue p {
+  margin: 0.3rem 0 !important;
+  color: #e2e8f0;
+}
+
+.info-box-green {
+  background: #061a14;
+  border: 1px solid #10b981;
+  border-radius: 12px;
+  padding: 1.2rem;
+  margin: 1.8rem 0;
+  box-shadow:
+    0 0 8px rgba(16, 185, 129, 0.8),
+    0 0 20px rgba(16, 185, 129, 0.5),
+    0 0 40px rgba(16, 185, 129, 0.3);
+}
+
+.info-box-green p {
+  color: #e2e8f0;
+  font-style: italic;
+  margin: 0 !important;
+}
+
+.info-title {
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: #60a5fa;
+  margin-bottom: 0.8rem;
+}
+
+.info-box-green .info-title {
+  color: #34d399;
+}
+
+/* Tarjeta de autor */
+.author-card {
+  border-left: 4px solid #38bdf8;
+  padding-left: 1rem;
+  margin: 1rem 0 1.5rem 0;
+  color: #f8fafc;
+}
+
+.author-card strong {
+  font-size: 1.1rem;
+  color: #ffffff;
+}
+
+.author-card em {
+  color: #94a3b8;
+}
+
+/* Filas de badges / tags */
+.skills-row, .tech-row {
+  margin: 1rem 0 1.5rem 0;
+  font-size: 1.05rem;
+  line-height: 1.9;
+}
+
+.skills-row span, .tech-row span {
+  font-weight: 600;
+}
+
+.skills-row span:not(:last-child)::after,
+.tech-row span:not(:last-child)::after {
+  content: ", ";
+  color: #94a3b8;
+  font-weight: 400;
+}
+
+.skills-row span:nth-child(1), .tech-row span:nth-child(1) { color: #60a5fa; }
+.skills-row span:nth-child(2), .tech-row span:nth-child(2) { color: #f1f5f9; }
+.skills-row span:nth-child(3), .tech-row span:nth-child(3) { color: #f87171; }
+.skills-row span:nth-child(4), .tech-row span:nth-child(4) { color: #34d399; }
+.skills-row span:nth-child(5), .tech-row span:nth-child(5) { color: #fb923c; }
+
+/* Terminal inferior */
+.terminal-box {
+  background: #030712;
+  border: 1px solid #1e293b;
+  border-radius: 10px;
+  padding: 1rem 1.5rem;
+  font-family: 'Courier New', Courier, monospace;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+}
+
+.terminal-box code {
+  color: #ffffff !important;
+  background: transparent !important;
+  font-size: 1rem !important;
+}
+
+.terminal-box .prompt {
+  color: #4ade80;
+  font-weight: bold;
+}
+/* Fondo general degradado azul-negro difuminado */
+[data-md-color-scheme="slate"] {
+  --md-default-bg-color: transparent;
+}
+
+body {
+  background:
+    radial-gradient(circle at 20% 15%, rgba(37, 99, 235, 0.35), transparent 45%),
+    radial-gradient(circle at 80% 70%, rgba(30, 64, 175, 0.25), transparent 55%),
+    #05070d;
+  background-attachment: fixed;
+  min-height: 100vh;
+}
+.md-typeset h1 {
+  color: #ffffff !important;
+}
