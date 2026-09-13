@@ -34,7 +34,7 @@ html, body {
   }
 
   .md-header__title:not(.md-header__title--active)::before {
-    content: "LABORATORIOS DE SISTEMAS OPERATIVOS     ★     LABORATORIOS DE SISTEMAS OPERATIVOS     ★     ";
+    content: "LABORATORIOS DE SISTEMAS OPERATIVOS       -       LABORATORIOS DE SISTEMAS OPERATIVOS       -       ";
     position: absolute;
     top: 0;
     left: 0;
@@ -45,7 +45,11 @@ html, body {
     color: inherit;
     animation: titleMarquee 14s linear infinite;
   }
-
+    /* Oculta el ticker cuando el checkbox de busqueda de Material esta activo */
+  [data-md-toggle="search"]:checked ~ .md-header .md-header__title::before {
+    display: none !important;
+  }
+  
   @keyframes titleMarquee {
     from { transform: translateX(0); }
     to   { transform: translateX(-50%); }
