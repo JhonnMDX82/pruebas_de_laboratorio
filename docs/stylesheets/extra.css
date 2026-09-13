@@ -16,25 +16,35 @@
   }
 }
 
-/* Título del header: permitir texto completo en celular en vez de cortarlo */
+
+
+html, body {
+  overflow-x: hidden;
+}/* Título del header en celular: una sola línea con efecto marquee,
+   y se respeta el estado nativo de Material cuando el buscador está activo */
 @media screen and (max-width: 76.1875em) {
-  .md-header__title {
-    height: auto !important;
+  .md-header__title:not(.md-header__title--active) {
+    height: auto;
+    overflow: hidden;
     display: flex;
     align-items: center;
   }
 
-  .md-header__title .md-ellipsis {
-    white-space: normal !important;
-    overflow: visible !important;
+  .md-header__title:not(.md-header__title--active) .md-ellipsis {
+    display: inline-block;
+    white-space: nowrap !important;
+    overflow: visible;
     text-overflow: unset !important;
     font-size: 0.95rem;
-    line-height: 1.25;
+    animation: titleMarquee 9s ease-in-out infinite;
+    animation-delay: 1.5s;
   }
-}
 
-html, body {
-  overflow-x: hidden;
+  @keyframes titleMarquee {
+    0%, 20%   { transform: translateX(0); }
+    50%, 70%  { transform: translateX(calc(-100% + 92vw)); }
+    100%      { transform: translateX(0); }
+  }
 }
 
 .md-grid {
