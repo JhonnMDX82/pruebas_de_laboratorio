@@ -23,7 +23,7 @@
     
     
       
-        <title>Laboratorio 1 - LABORATORIOS DE SISTEMAS OPERATIVOS</title>
+        <title>🧪 Laboratorio 1 — Procesos en Sistemas Operativos - LABORATORIOS DE SISTEMAS OPERATIVOS</title>
       
     
     
@@ -74,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#laboratorio-1" class="md-skip">
+        <a href="#laboratorio-1-procesos-en-sistemas-operativos" class="md-skip">
           Saltar a contenido
         </a>
       
@@ -108,7 +108,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Laboratorio 1
+              🧪 Laboratorio 1 — Procesos en Sistemas Operativos
             
           </span>
         </div>
@@ -327,24 +327,146 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#objetivos" class="md-nav__link">
+  <a href="#parte-1-introduccion-a-los-procesos" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Objetivos
+        📖 Parte 1 — Introducción a los Procesos
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📖 Parte 1 — Introducción a los Procesos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-preparacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Preparación
       
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#guia-de-trabajo" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#2-proceso-padre-e-hijo" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Guía de Trabajo
+        2. Proceso padre e hijo
       
     </span>
   </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-pid-y-ppid" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. PID y PPID
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-ejecucion-del-proceso" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Ejecución del proceso
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-primer-commit" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Primer commit
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#parte-1-desafios" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🚀 Parte 1 — Desafíos
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🚀 Parte 1 — Desafíos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#desafio-1-modificacion-del-proceso" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Desafío 1 — Modificación del proceso
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#desafio-2-multiples-procesos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Desafío 2 — Múltiples procesos
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#desafio-3-git" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Desafío 3 — Git
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#desafio-4-recuperacion-de-una-version" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Desafío 4 — Recuperación de una versión
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#desafio-5-explicacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Desafío 5 — Explicación
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -365,15 +487,82 @@
 
 
 
-<h1 id="laboratorio-1">Laboratorio 1</h1>
-<h2 id="objetivos">Objetivos</h2>
+<h1 id="laboratorio-1-procesos-en-sistemas-operativos">🧪 Laboratorio 1 — Procesos en Sistemas Operativos</h1>
+<div class="info-box-blue">
+<div class="info-title">ℹ️ Objetivo</div>
+<p>Comprender el funcionamiento básico de los procesos en un sistema operativo mediante programas desarrollados en Python.</p>
+<p>Durante el laboratorio se trabajará con:</p>
 <ul>
-<li>Redacta aquí los objetivos del laboratorio 1.</li>
+<li>Procesos padre e hijo.</li>
+<li>PID y PPID.</li>
+<li>Creación y ejecución de procesos.</li>
 </ul>
-<h2 id="guia-de-trabajo">Guía de Trabajo</h2>
+</div>
+<hr />
+<h2 id="parte-1-introduccion-a-los-procesos">📖 Parte 1 — Introducción a los Procesos</h2>
+<h3 id="1-preparacion">1. Preparación</h3>
+<p>Trabajar utilizando:</p>
+<div class="tech-row">
+  <span>🖥️ Visual Studio Code</span>
+  <span>🐍 Python</span>
+  <span>💻 PowerShell</span>
+  <span>🐙 Git</span>
+</div>
+
+<p>Verifique que Python y Git estén disponibles antes de comenzar.</p>
+<h3 id="2-proceso-padre-e-hijo">2. Proceso padre e hijo</h3>
+<p>Analice el ejemplo desarrollado por el auxiliar de docencia. Identifique:</p>
 <ul>
-<li>Escribe aquí las instrucciones de la práctica.</li>
+<li>¿Cuál es el proceso padre?</li>
+<li>¿Cuál es el proceso hijo?</li>
+<li>¿Cómo se crea un proceso?</li>
+<li>¿Cómo se inicia?</li>
+<li>¿Cómo se espera su finalización?</li>
 </ul>
+<h3 id="3-pid-y-ppid">3. PID y PPID</h3>
+<p>Observe los valores mostrados durante la ejecución del programa. Identifique:</p>
+<ul>
+<li>PID del proceso padre.</li>
+<li>PID del proceso hijo.</li>
+<li>PPID del proceso hijo.</li>
+</ul>
+<p>Determine la relación existente entre el proceso padre y el proceso hijo.</p>
+<h3 id="4-ejecucion-del-proceso">4. Ejecución del proceso</h3>
+<p>Observe el comportamiento del programa durante su ejecución. Identifique:</p>
+<ol>
+<li>Inicio del proceso padre.</li>
+<li>Creación del proceso hijo.</li>
+<li>Ejecución del proceso hijo.</li>
+<li>Finalización del proceso hijo.</li>
+<li>Continuación del proceso padre.</li>
+</ol>
+<div class="info-box-green">
+<div class="info-title">💡 Preste Atención al Uso de</div>
+<p><code>Process</code> · <code>start()</code> · <code>join()</code></p>
+</div>
+<h3 id="5-primer-commit">5. Primer commit</h3>
+<p>Una vez que el ejemplo funcione correctamente, registre la versión inicial utilizando Git. Compruebe posteriormente el historial mediante:</p>
+<div class="terminal-box">
+  <code><span class="prompt">Visual Code:</span> git log</code>
+</div>
+
+<hr />
+<h2 id="parte-1-desafios">🚀 Parte 1 — Desafíos</h2>
+<p>Los siguientes desafíos deberán realizarse individualmente.</p>
+<h3 id="desafio-1-modificacion-del-proceso">Desafío 1 — Modificación del proceso</h3>
+<p>Modifique el programa trabajado durante la clase para que el proceso hijo realice una tarea diferente. Debe mostrar información que permita identificar el proceso.</p>
+<h3 id="desafio-2-multiples-procesos">Desafío 2 — Múltiples procesos</h3>
+<p>Modifique el programa para trabajar con más de un proceso hijo. Cada proceso deberá poder ser identificado mediante su PID.</p>
+<h3 id="desafio-3-git">Desafío 3 — Git</h3>
+<p>Guarde una nueva versión del programa mediante un commit. El historial debe permitir identificar claramente las diferentes versiones. Utilice:</p>
+<div class="terminal-box">
+  <code><span class="prompt">Visual Code:</span> git log</code>
+</div>
+
+<h3 id="desafio-4-recuperacion-de-una-version">Desafío 4 — Recuperación de una versión</h3>
+<p>Realice una modificación adicional en el programa. Posteriormente, utilice Git para regresar a una versión anterior. Debe demostrar qué versión recuperó y qué commit utilizó.</p>
+<h3 id="desafio-5-explicacion">Desafío 5 — Explicación</h3>
+<p>Explique al auxiliar de docencia el funcionamiento de su programa y las modificaciones realizadas.</p>
 
 
 

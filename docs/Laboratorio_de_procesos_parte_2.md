@@ -1,3 +1,7 @@
+---
+search:
+  exclude: true
+---
 # 🧪 Laboratorio 1 — Procesos en Sistemas Operativos Parte 2
 
 <div class="info-box-blue" markdown>
