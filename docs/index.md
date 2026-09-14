@@ -8,12 +8,12 @@
       <ul class="lab-list">
         <!--<li class="ready"><a href="Laboratorio_de_procesos_parte_1/">Laboratorio de Procesos — Parte 1</a></li>-->
         <li class="locked">Laboratorio de Procesos — Parte 1 <span class="soon">Próximamente</span></li>
-        <!--<li class="ready"><a href="Laboratorio_de_procesos_parte_2/">Laboratorio de Procesos — Parte 2</a></li>-->
+        <!--<li class="ready"><a href="Laboratorio_de_procesos_parte_2sw/">Laboratorio de Procesos — Parte 2</a></li>-->
         <li class="locked">Laboratorio de Procesos — Parte 2 <span class="soon">Próximamente</span></li>
-        <!--<li class="ready"><a href="Laboratorio_3/">Laboratorio 3 Round and Robin</a></li>-->
-        <li class="locked">Laboratorio 3 Round and Robin<span class="soon">Próximamente</span></li>
+        <!--<li class="ready"><a href="Laboratorio_2/">Laboratorio 2 Round and Robin</a></li>-->
+        <li class="locked">Laboratorio 2 Round and Robin<span class="soon">Próximamente</span></li>
+        <li class="locked">Laboratorio 3 <span class="soon">Próximamente</span></li>
         <li class="locked">Laboratorio 4 <span class="soon">Próximamente</span></li>
-        <li class="locked">Laboratorio 5 <span class="soon">Próximamente</span></li>
       </ul>
     </details>
   </div>
