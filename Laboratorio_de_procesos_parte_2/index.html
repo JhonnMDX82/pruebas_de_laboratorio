@@ -23,7 +23,7 @@
     
     
       
-        <title>Laboratorio 2 - LABORATORIOS DE SISTEMAS OPERATIVOS</title>
+        <title>🧪 Laboratorio 1 — Procesos en Sistemas Operativos Parte 2 - LABORATORIOS DE SISTEMAS OPERATIVOS</title>
       
     
     
@@ -74,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#laboratorio-2" class="md-skip">
+        <a href="#laboratorio-1-procesos-en-sistemas-operativos-parte-2" class="md-skip">
           Saltar a contenido
         </a>
       
@@ -108,7 +108,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Laboratorio 2
+              🧪 Laboratorio 1 — Procesos en Sistemas Operativos Parte 2
             
           </span>
         </div>
@@ -327,24 +327,135 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#objetivos" class="md-nav__link">
+  <a href="#parte-2-multiples-procesos-huerfanos-y-zombies" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Objetivos
+        📖 Parte 2 — Múltiples Procesos, Huérfanos y Zombies
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📖 Parte 2 — Múltiples Procesos, Huérfanos y Zombies">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-multiples-procesos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Múltiples procesos
       
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#guia-de-trabajo" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#2-proceso-huerfano" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Guía de Trabajo
+        2. Proceso huérfano
       
     </span>
   </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-proceso-zombie" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Proceso zombie
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-commits-de-los-ejemplos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Commits de los ejemplos
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#parte-2-desafios" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🚀 Parte 2 — Desafíos
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🚀 Parte 2 — Desafíos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#desafio-1-multiples-procesos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Desafío 1 — Múltiples procesos
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#desafio-2-proceso-huerfano" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Desafío 2 — Proceso huérfano
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#desafio-3-concepto-zombie" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Desafío 3 — Concepto zombie
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#desafio-4-git-y-versiones" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Desafío 4 — Git y versiones
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#desafio-5-recuperacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Desafío 5 — Recuperación
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -365,15 +476,105 @@
 
 
 
-<h1 id="laboratorio-2">Laboratorio 2</h1>
-<h2 id="objetivos">Objetivos</h2>
+<h1 id="laboratorio-1-procesos-en-sistemas-operativos-parte-2">🧪 Laboratorio 1 — Procesos en Sistemas Operativos Parte 2</h1>
+<div class="info-box-blue">
+<div class="info-title">ℹ️ Objetivo</div>
+<p>Comprender el funcionamiento básico de los procesos en un sistema operativo mediante programas desarrollados en Python.</p>
+<p>Durante el laboratorio se trabajará con:</p>
 <ul>
-<li>Redacta aquí los objetivos del laboratorio 1.</li>
+<li>Múltiples procesos.</li>
+<li>Procesos huérfanos.</li>
+<li>Concepto de procesos zombie.</li>
+<li>Control de versiones mediante Git.</li>
 </ul>
-<h2 id="guia-de-trabajo">Guía de Trabajo</h2>
+</div>
+<hr />
+<h2 id="parte-2-multiples-procesos-huerfanos-y-zombies">📖 Parte 2 — Múltiples Procesos, Huérfanos y Zombies</h2>
+<h3 id="1-multiples-procesos">1. Múltiples procesos</h3>
+<p>Analice el ejemplo desarrollado por el auxiliar de docencia. Identifique:</p>
 <ul>
-<li>Escribe aquí las instrucciones de la práctica.</li>
+<li>Proceso padre.</li>
+<li>Procesos hijos.</li>
+<li>PID de cada proceso.</li>
+<li>PPID de cada proceso.</li>
 </ul>
+<p>Represente la relación:</p>
+<pre><code>             PADRE
+           /   |   \
+        HIJO  HIJO  HIJO
+</code></pre>
+<p>Observe el uso de <code>start()</code> y <code>join()</code>.</p>
+<h3 id="2-proceso-huerfano">2. Proceso huérfano</h3>
+<p>Analice el ejemplo desarrollado por el auxiliar de docencia. Observe qué ocurre cuando el proceso padre termina mientras el proceso hijo continúa ejecutándose. Identifique:</p>
+<ul>
+<li>Qué proceso termina primero.</li>
+<li>Qué proceso continúa ejecutándose.</li>
+<li>Por qué se denomina proceso huérfano.</li>
+</ul>
+<pre><code>PADRE
+  │
+  └── HIJO
+
+PADRE TERMINA
+
+  └── HIJO CONTINÚA
+</code></pre>
+<div class="info-box-green">
+<div class="info-title">⚠️ Nota</div>
+<p>El comportamiento del PPID puede ser diferente en Windows respecto a Linux/Unix.</p>
+</div>
+<h3 id="3-proceso-zombie">3. Proceso zombie</h3>
+<p>Analice el ejemplo presentado por el auxiliar de docencia. Comprenda la diferencia entre:</p>
+<p><strong>Proceso huérfano</strong></p>
+<pre><code>PADRE TERMINA
+      ↓
+HIJO CONTINÚA
+</code></pre>
+<p><strong>Proceso zombie</strong></p>
+<pre><code>HIJO TERMINA
+      ↓
+PADRE CONTINÚA
+      ↓
+NO SE HA RECOGIDO SU ESTADO
+</code></pre>
+<div class="info-box-green">
+<div class="info-title">💡 Dato Clave</div>
+<p>El proceso zombie se estudiará como concepto y simulación, debido a las diferencias entre Windows y Linux/Unix.</p>
+</div>
+<h3 id="4-commits-de-los-ejemplos">4. Commits de los ejemplos</h3>
+<p>Después de trabajar correctamente cada ejemplo desarrollado durante la clase, registre las versiones correspondientes mediante Git. Compruebe el historial con:</p>
+<div class="terminal-box">
+  <code><span class="prompt">Visual Code:</span> git log</code>
+</div>
+
+<hr />
+<h2 id="parte-2-desafios">🚀 Parte 2 — Desafíos</h2>
+<h3 id="desafio-1-multiples-procesos">Desafío 1 — Múltiples procesos</h3>
+<p>Crear un programa que ejecute varios procesos hijos. Cada proceso deberá realizar una tarea identificable y mostrar información que permita determinar:</p>
+<ul>
+<li>Proceso.</li>
+<li>PID.</li>
+<li>PPID.</li>
+<li>Inicio y finalización.</li>
+</ul>
+<h3 id="desafio-2-proceso-huerfano">Desafío 2 — Proceso huérfano</h3>
+<p>Modificar un programa para demostrar el comportamiento de un proceso huérfano. Deberá explicar qué ocurre con el padre y qué ocurre con el hijo.</p>
+<h3 id="desafio-3-concepto-zombie">Desafío 3 — Concepto zombie</h3>
+<p>Realizar una demostración conceptual del proceso zombie. Deberá explicar:</p>
+<ul>
+<li>Cuándo termina el hijo.</li>
+<li>Qué ocurre con el padre.</li>
+<li>Qué significa que el estado del hijo no haya sido recogido.</li>
+<li>Por qué la demostración en Windows es conceptual.</li>
+</ul>
+<h3 id="desafio-4-git-y-versiones">Desafío 4 — Git y versiones</h3>
+<p>Realizar diferentes commits durante el desarrollo de los desafíos. El historial deberá mostrar el desarrollo progresivo del trabajo. Compruebe las versiones mediante:</p>
+<div class="terminal-box">
+  <code><span class="prompt">Visual Code:</span> git log</code>
+</div>
+
+<h3 id="desafio-5-recuperacion">Desafío 5 — Recuperación</h3>
+<p>Modificar intencionalmente el programa y posteriormente recuperar una versión anterior utilizando Git. Deberá demostrar el procedimiento y explicar qué versión recuperó.</p>
 
 
 
